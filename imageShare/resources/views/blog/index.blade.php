@@ -21,7 +21,7 @@
 
 {{-- @if (Auth::check()) --}}
     <div class="pt-15 w-4/5 m-auto">
-        <a 
+        <a
             href="/blog/create"
             class="bg-red-700 uppercase bg-transparent text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
             PIN IMAGE
@@ -29,14 +29,14 @@
     </div>
 {{-- @endif --}}
 
-{{-- @foreach ($posts as $post) --}}
+ @foreach ($posts as $post)
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
             {{-- <img src="{{ asset('images/' . $post->image_path) }}" alt=""> --}}
         </div>
         <div>
             <h2 class="text-gray-700 font-bold text-5xl pb-4">
-                {{-- {{ $post->title }} --}}
+                 {{ $post->title }}
             </h2>
 
             <span class="text-gray-500">
@@ -44,18 +44,16 @@
             </span>
 
             <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-                {{-- {{ $post->description }} --}}
-
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis facilis architecto consectetur soluta, eveniet sunt aliquam tempora quam delectus, totam dolor quaerat quo sint, dignissimos adipisci doloribus optio libero.
+                 {{ $post->description }}
             </p>
 
-            <a href="/blog" class="uppercase bg-red-700 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
+            <a href="/blog/{{ $post->slug }}" class="uppercase bg-red-700 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Keep Reading
             </a>
 
             {{-- @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id) --}}
                 <span class="float-right">
-                    <a 
+                    <a
                         href="/blog/edit"
                         class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
                         Edit
@@ -63,7 +61,7 @@
                 </span>
 
                 <span class="float-right">
-                     <form 
+                     <form
                         action="/blog"
                         method="POST">
                         {{-- @csrf
@@ -79,7 +77,7 @@
                 </span>
             {{-- @endif --}}
         </div>
-    </div>    
-{{-- @endforeach --}}
+    </div>
+@endforeach
 
 @endsection
