@@ -15,4 +15,5 @@ ImageShare is a solo project I had to build during my training at BeCode. The go
 - CRUD
 - Homepage with tiles
 - Redirection on click with details of the photo (still to be done)
+- Deploy the app & db (halfway through)
 - 
