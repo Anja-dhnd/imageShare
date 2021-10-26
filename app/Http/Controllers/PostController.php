@@ -84,7 +84,7 @@ class PostController extends Controller
      */
     public function edit($slug):string
     {
-        return view('blog.edit')->with('post', Post::where('slug', $slug)->first());
+        return view('blog.edit')->with('post',Post::where('slug', $slug)->first());
     }
 
     /**
