@@ -5,7 +5,7 @@
 ![tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ImageShare is a solo project I had to build during my training at BeCode. The goal was to deploy some sort of Pinterest clone made totally with Laravel. 
-
+You can see it deployed on [Heroku](https://pin-tes-restes.herokuapp.com/).
 
 ### Features
 
