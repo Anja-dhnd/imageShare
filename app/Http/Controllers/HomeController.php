@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except('upload');
     }
 
     /**
@@ -25,4 +25,18 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function upload(Request $request)
+    {
+
+        if ($request->file('image') == null) {
+            $file = "";
+        }else{
+            $file = $request->file('image')->store('images');
+        }
+
+
+
+    }
+
 }
