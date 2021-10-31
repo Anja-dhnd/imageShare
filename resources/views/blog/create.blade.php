@@ -45,6 +45,7 @@
           </div>
             <button type="submit" class="uppercase mt-15 bg-red-700 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Submit post
+
             </button>
       </form>
   </div>
