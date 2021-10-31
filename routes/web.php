@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
@@ -27,4 +28,7 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::post('/upload',[PostController::class, 'store'])->name('store');
 
+Route::get('/sym', function () {
+    Artisan::call('storage:link');
+});
 
