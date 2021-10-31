@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use App\Models\Post;
+
 class PostController extends Controller
 {
 
@@ -50,7 +52,7 @@ class PostController extends Controller
             'image' => 'required|mimes:jpg,png,jpeg|max:5048'
         ]);
 
-        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
+        $newImageName = uniqid('', true) . '-' . $request->title . '.' . $request->image->extension();
         $request->image->move(public_path('images'), $newImageName);
 
         Post::create([
@@ -73,7 +75,7 @@ class PostController extends Controller
      */
     public function show($slug):string
     {
-        return view('blog.show')->with('post', Post::where('slug',$slug)->first());
+        return view('blog.show')->with('post', Post::where('slug', $slug)->first());
     }
 
     /**
@@ -123,5 +125,13 @@ class PostController extends Controller
         return redirect('/blog')->with('message', 'Your post has been deleted successfully.');
     }
 
+//        public function upload(Request $request)
+//    {
+//        //dd($request);
+//        if ($request->hasFile('input_img')) {
+//            $file = $request->file('input_img');
+//            $fileName = $file->getSize();
+//            return $fileName;
+//         }
+//    }
 }
-
