@@ -8,6 +8,9 @@
             <h1 class="text-4xl">
                 {{$post->title}}
             </h1>
+            <div>
+                <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+            </div>
         </div>
     </div>
 
