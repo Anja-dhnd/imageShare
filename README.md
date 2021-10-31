@@ -17,3 +17,4 @@ You can see it deployed on [Heroku](https://pin-tes-restes.herokuapp.com/).
 - Redirection on click with details of the photo (still to be done)
 - Deploy the app & db (halfway through)
 
+Work in progress...
