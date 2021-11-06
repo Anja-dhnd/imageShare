@@ -28,7 +28,7 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::post('/upload',[PostController::class, 'store'])->name('store');
 
-Route::get('/sym', function () {
-    Artisan::call('storage:link');
-});
+//Route::get('/sym', function () {
+//    Artisan::call('storage:link');
+//});
 
