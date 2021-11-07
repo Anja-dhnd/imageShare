@@ -14,64 +14,9 @@
 
 {{--{{ $posts }}--}}
 
-{{--TILES--}}
-
-<div class="flex flex-wrap overflow-hidden md:-mx-1 lg:-mx-1 xl:-mx-1">
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-    <div class="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4">
-        <!-- Column Content -->
-    </div>
-
-</div>
-{{--END TILES --}}
-
 <div class="text-center p-15 bg-black text-white">
     <h2 class="text-2xl pb-5 text-l">
-        Pin what you like, like what you see
+        Pin what you like, like what others pin
     </h2>
 
     <span class="font-bold block text-3xl py-1">
@@ -96,9 +41,62 @@
         Some posts
     </h2>
 
-    <p class="m-auto w-4/5 text-gray-500">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
-    </p>
+    <div class="row-span-2">
+        <div class="grid grid-cols-3 px-10 gap-2">
+            <div class="flex justify-center items-center">
+                <a class="cursor-pointer" href="#">
+                    <div class="hover:scale-105 transform transition-all duration-500">
+                        <img class="h-30 rounded-lg"
+                             src="https://picsum.photos/400/300?random=1" alt="image" />
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <a class="cursor-pointer" href="#">
+                    <div class="hover:scale-105 transform transition-all duration-500">
+                        <img class="h-30 my-10 rounded-lg"
+                             src="https://picsum.photos/400/300?random=2" alt="image" />
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <a class="cursor-pointer" href="#">
+                    <div class="hover:scale-105 transform transition-all duration-500">
+                        <img class="h-30 rounded-lg"
+                             src="https://picsum.photos/400/300?random=3" alt="image" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row-span-2">
+        <div class="grid grid-cols-3 px-10 gap-2">
+            <div class="flex justify-center items-center">
+                <a class="cursor-pointer" href="#">
+                    <div class="hover:scale-105 transform transition-all duration-500">
+                        <img class="h-30 rounded-lg"
+                             src="https://picsum.photos/400/300?random=4" alt="image" />
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <a class="cursor-pointer" href="#">
+                    <div class="hover:scale-105 transform transition-all duration-500">
+                        <img class="h-30 rounded-lg"
+                             src="https://picsum.photos/400/300?random=5" alt="image" />
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <a class="cursor-pointer" href="#">
+                    <div class="hover:scale-105 transform transition-all duration-500">
+                        <img class="h-30 rounded-lg"
+                             src="https://picsum.photos/400/300?random=6" alt="image" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 @endsection
