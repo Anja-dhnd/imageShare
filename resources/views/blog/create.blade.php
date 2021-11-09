@@ -28,9 +28,9 @@
 
           @csrf
 
-          <input type="text" name="title" placeholder="Title" class="bg-transparent block border-b-2 w-full h-20 text-3xl outline-none">
+          <input type="text" name="title"  value="{{old("title")}}" placeholder="Title" class="bg-transparent block border-b-2 w-full h-20 text-3xl outline-none">
 
-          <textarea name="description" placeholder="Description" class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
+          <textarea name="description" value="{{old("description")}}"  placeholder="Description" class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
 
           <div class="bg-grey-lighter pt-15">
 

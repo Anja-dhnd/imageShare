@@ -44,6 +44,8 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
     public function store(Request $request)
     {
         $request->validate([
@@ -84,7 +86,7 @@ class PostController extends Controller
      * @param $slug
      * @return \Illuminate\Http\Response
      */
-    public function edit($slug):string
+    public function edit($slug):object //simplifier
     {
         return view('blog.edit')->with('post',Post::where('slug', $slug)->first());
     }
